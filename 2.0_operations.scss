@@ -1,0 +1,27 @@
+// Operations
+
+
+//Sass variables can do operations behind the scenes on the CSS
+
+//in scss:
+h1{
+content: $var;
+}
+
+//in css
+h1{
+content: whatevs;}
+
+//Sass will override whatever content with the contents of the $var
+
+$var: 10 * 5;
+//on scss will cause a number on CSS to output as 50
+
+
+//Sass reads the number on the left, so 
+$var : 10 * 5px;
+// will throw an error,
+$var: 10px * 5px; 
+//will output to 50px, but also
+$var: 10px * 5;
+//will successfully output to 50px
