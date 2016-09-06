@@ -1,0 +1,12 @@
+/* Re-using variables */
+
+/*You can change just name variables in the beginning and insert them throughout the style sheet.
+Makes it easy to override a pre-exisiting style.*/
+$font-one: "helvetica", arial, sans-serif;.
+/*You can choose a specific color name, define it, and then just call it with $red, etc. */
+$green: #bada55
+
+h1{
+	color: $green;
+	font: $font-one;
+}
